@@ -1,5 +1,7 @@
 package com.example.demo.models;
 
+import java.util.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,5 +15,6 @@ import lombok.Data;
 public class boleta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_boleta;
+    private long num_boleta;
+    private Date fecha;
 }

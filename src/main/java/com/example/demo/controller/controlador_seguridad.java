@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 
-@CrossOrigin(origins = ("hhtp://localhost:4200"))
+@CrossOrigin(origins = ("http://localhost:4200"))
 @RestController
 @RequestMapping("/admin")
 public class controlador_seguridad {
@@ -36,7 +36,7 @@ public class controlador_seguridad {
     String aux;
     ArrayList<usuario>lista_usuario= new ArrayList<>();
     usuario usuario_actual= new usuario();
-    @PostMapping("/login")
+    /*@PostMapping("/login")
     public HashMap<String,Object> login(@RequestBody usuario usuario_nuevo, final HttpServletResponse response) throws IOException {
         HashMap<String,Object> respuesta=new HashMap<>();
         lista_usuario = servicio_usuario.obtenerxusuario(usuario_nuevo.getNombre());
@@ -48,7 +48,7 @@ public class controlador_seguridad {
         }
         
         return entity;
-    }
+    }*/
     @GetMapping("/")
     public ArrayList<usuario> getMethodName() {
 

@@ -18,7 +18,4 @@ public class categorias {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_categoria;
     private String nombre ;
-
-
-
 }
